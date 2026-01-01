@@ -1,0 +1,31 @@
+<template>
+  <lightning-card title="LiveSearch Accounts" icon-name="standard:account">
+    <div class="slds-p-around_small">
+      <lightning-input
+        type="search"
+        label="Search By Account Name"
+        value={searchkey}
+        onchange={handleSearch}>
+      </lightning-input>
+
+      <lightning-button
+        variant="brand"
+        label="Search Account"
+        title="Primary action"
+        onclick={searchTask}
+        class="slds-m-top_small">
+      </lightning-button>
+    </div>
+    <p class="slds-p-horizontal_small">Number of Accounts Found: {account.length}</p>
+    <template if:true={account}>
+      <lightning-datatable
+        key-field="Id"
+        data={account}
+        columns={columns}>
+      </lightning-datatable> 
+      </template>
+   <template if:true={showNoResults}>
+  <p class="slds-p-horizontal_small">No accounts found.</p>
+</template>
+  </lightning-card>
+</template>
