@@ -84,6 +84,9 @@ sfdx force:org:open -u ScratchOrgAlias
         lightning__AppPage
         lightning__RecordPage
         lightning__HomePage
+
+
+
     
 
 ```
@@ -106,6 +109,9 @@ sfdx force:org:open -u ScratchOrgAlias
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+<img width="1920" height="918" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/952fe4b3-c263-4b2b-a155-a6900fdbdcd8" />
+
 
 ## Author
 
